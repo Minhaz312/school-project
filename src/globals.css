@@ -1,0 +1,137 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.mobile-menu {
+  display: none;
+}
+.desktop-menu {
+  display: block !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00539cff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 61, 114);
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+/* Home starts */
+
+.school-list-item {
+  padding: 1.3rem;
+  /* border: 1px solid gray; */
+  transition: all 0.33s;
+}
+.school-list-item:hover {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 30px rgb(196, 194, 194);
+}
+
+/* Home ends */
+
+/* gallery starts */
+
+.gallery-img-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 28%,
+    rgba(255, 255, 255, 0.137) 51%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.gallery-img-container {
+  position: relative;
+}
+.gallery-img-content p {
+  color: #ffffff;
+  font-weight: bold;
+}
+.bg-custom-primary {
+  background-color: #00539cff !important;
+}
+.color-custom-primary {
+  color: #00539cff !important;
+}
+
+/* portal start */
+.attendance-form table {
+  width: 100%;
+  padding: 13px;
+  text-align: center;
+  border: 1px solid black;
+  margin-bottom: 13px;
+}
+.attendance-form table thead {
+  background: #03254c;
+  color: white;
+}
+.attendance-form table thead th {
+  padding: 13px;
+}
+.attendance-form table tbody tr {
+  border: 1px solid black;
+}
+.attendance-form table tbody tr :nth-child(3) {
+  font-weight: bold;
+}
+
+/* portal end */
+
+/* gallery ends */
+
+@media screen and (min-width: 992px) {
+  .desktop-admission-form {
+    display: block;
+  }
+  .mobile-admission-form {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .desktop-admission-form {
+    display: none;
+  }
+  .mobile-admission-form {
+    display: block;
+  }
+}

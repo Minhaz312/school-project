@@ -1,0 +1,33 @@
+.aboutImage {
+  float: left;
+  margin-right: 10px;
+  height: 250px;
+  width: 250px;
+}
+.bannerHeight {
+  height: 60vh;
+}
+@media (max-width: 992px) {
+  .bannerHeight {
+    height: 60vh;
+  }
+  .flex-md-reverse-column {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutImage {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  .bannerHeight {
+    height: 50vh;
+  }
+}
